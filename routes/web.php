@@ -1,6 +1,9 @@
 <?php
 
+use App\Models\Actor;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ActorsController;
+use App\Http\Controllers\StarWarsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/actors', [ActorsController::class, 'index'])->name('actors.index');
+Route::get('/star-wars/people', [StarWarsController::class, 'people'])->name('star-wars.people');
