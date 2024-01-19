@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Actor;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ActorsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/actors', [ActorsController::class, 'index'])->name('actors.index');
