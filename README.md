@@ -54,6 +54,12 @@ Be sure you are in the root directory of the project when running the command.
 
 See [the Laravel docs](https://laravel.com/docs/10.x) to see how to create controllers, models, etc with artisan commands
 
+### Usage 
+
+- Migrate and seed database with `php artisan migrate:fresh --seed`
+- View actors list at `/actors`
+- View star wars people list at `/star-wars/people`
+
 ### Requirements
 
 This assessment is to see how your write clean, readable code and how you structure your application. Front end styling is not required, but you can add it if you'd like. We won't take it into account when reviewing the assessment.
